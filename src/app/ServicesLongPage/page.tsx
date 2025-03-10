@@ -24,8 +24,6 @@ const ServicesLongPage = () => {
                 <Card /> <Card />
             </div>
         </div>
-
-      
       </div>
     </div>
   );
