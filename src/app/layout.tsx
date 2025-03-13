@@ -8,6 +8,9 @@ import Navbar from "./Navbar/page";
 import PrivacySixCards from "./PrivacySixCards/page";
 import ServicesLongPage from "./ServicesLongPage/page";
 import Footer from "./Footer/page";
+import Struggles from "./Struggles/page";
+import Ourprocess from "./Ourprocess/page";
+import Faq from "./Faq/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +40,12 @@ export default function RootLayout({
         <Navbar />
         <Hero />
         <HeroWithCards />
-        <PrivacySixCards />
+        <Struggles />
+        <Ourprocess />
+        <Faq />
         {children}
-        <ServicesLongPage />
+        <PrivacySixCards />
+        {/* <ServicesLongPage /> */}
         <Footer />
       </body>
     </html>

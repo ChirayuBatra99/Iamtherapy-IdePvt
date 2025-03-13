@@ -1,4 +1,6 @@
 import * as React from "react"
+import { MdHealthAndSafety } from "react-icons/md";
+import type { IconType } from 'react-icons';
 
 import { Button } from "@/components/ui/button"
 import {
@@ -19,17 +21,20 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-export default function CardWithForm() {
-  return (
-    <Card className="w-[300px]">
+interface CardWithFormProps {
+  title: string;
+  desc: string;
+  Icon: IconType;
+}
+
+export default function CardWithForm({ title, desc,Icon }: CardWithFormProps) {  return (
+    <Card className="w-[300px] items-center m-2 rounded-4xl border-amber-950 bg-pink-300">
+        {Icon && <Icon className="w-20 h-20"/>}
+
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.
-            Write some more shit  Deploy your new project in one-click.
-            Write some more shitDeploy your new project in one-click.
-            Write some more shitDeploy your new project in one-click.
-            Write some more shitDeploy your new project in one-click.
-            Write some more shit
+              <CardTitle className="text-2xl">{title}</CardTitle>
+        <CardDescription className="text-white">
+          {desc}
         </CardDescription>
       </CardHeader>
      

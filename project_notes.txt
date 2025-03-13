@@ -2,3 +2,6 @@ rafce
 
 Layout vs Template:
 https://walk.hashnode.dev/difference-between-layouts-and-templates-in-nextjs#heading-layouts-in-nextjs
+
+Blissed Me
+Zen Path.com
