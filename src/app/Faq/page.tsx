@@ -16,9 +16,9 @@ const FAQItem = ({ question, answer }: InputProps) => {
         className='flex justify-between w-full py-5 text-left items-center'
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className='text-lg font-medium text-gray-900'>{question}</span>
+        <span className='text-lg font-medium text-white'>{question}</span>
         <FaChevronDown
-          className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
+          className={`w-5 h-5 text-white transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
             } `}
         />
       </button>
@@ -59,13 +59,15 @@ const Faq = () => {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-8">Frequently Asked Questions</h2>
+    <div className='bg-gradient-to-r from-blue-500 to-purple-500'>
+    <div className="max-w-3xl mx-auto py-12  sm:px-6 lg:px-8 ">
+      <h2 className="text-3xl font-extrabold text-white mb-8">Frequently Asked Questions</h2>
       <div className="space-y-6">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
+    </div>
     </div>
   );
 };

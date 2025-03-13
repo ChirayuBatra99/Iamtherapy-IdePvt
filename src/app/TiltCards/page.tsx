@@ -29,7 +29,7 @@ export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
   return (
     <div className="flex justify-center items-center  p-7">
       <Tilt
-        className="w-80 h-90 bg-gradient-to-r from-blue-500 to-purple-600 
+        className="w-80 h-90  bg-emerald-600 border-2 border-white-950
                   rounded-2xl shadow-xl flex items-center justify-center flex-col"
         tiltMaxAngleX={20}
         tiltMaxAngleY={20}
@@ -44,8 +44,8 @@ export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
         ) : (
           <p className="text-white">Invalid Icon</p> // Handle missing icons
         )}
-        <h2 className="text-white text-2xl font-bold py-5">{title}</h2>
-        <p className="text-white text-1xl font-bold py-5">{desc}</p>
+        <h2 className="text-black text-2xl font-bold py-5">{title}</h2>
+        <p className="text-black text-1xl font-bold py-5 px-4">{desc}</p>
       </Tilt>
     </div>
   );
@@ -55,3 +55,4 @@ export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
 
 
 // bg-gradient-to-r from-blue-500 to-purple-600
+// bg-gradient-to-r   bg-blue-500 to-emerald-600

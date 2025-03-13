@@ -39,8 +39,8 @@ export default function RootLayout({
       >
         <Navbar />
         <Hero />
-        <HeroWithCards />
         <Struggles />
+        <HeroWithCards />
         {/* <Ourprocess /> */}
         <Faq />
         {children}
