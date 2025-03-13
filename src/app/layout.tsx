@@ -41,7 +41,7 @@ export default function RootLayout({
         <Hero />
         <HeroWithCards />
         <Struggles />
-        <Ourprocess />
+        {/* <Ourprocess /> */}
         <Faq />
         {children}
         <PrivacySixCards />
