@@ -2,6 +2,7 @@ import * as React from "react"
 import { MdHealthAndSafety } from "react-icons/md";
 import type { IconType } from 'react-icons';
 
+
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -28,9 +29,9 @@ interface CardWithFormProps {
 }
 
 export default function CardWithForm({ title, desc,Icon }: CardWithFormProps) {  return (
-    <Card className="w-[300px] items-center m-2 rounded-4xl border-amber-950 bg-pink-300">
-        {Icon && <Icon className="w-20 h-20"/>}
 
+    <Card className="w-[300px] items-center m-2 rounded-4xl border-amber-950 bg-pink-300">
+        {/* {Icon && <Icon className="w-20 h-20"/>} */}
       <CardHeader>
               <CardTitle className="text-2xl">{title}</CardTitle>
         <CardDescription className="text-white">
@@ -39,6 +40,7 @@ export default function CardWithForm({ title, desc,Icon }: CardWithFormProps) { 
       </CardHeader>
      
     </Card>
+
   )
 }
 

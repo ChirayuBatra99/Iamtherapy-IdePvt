@@ -9,7 +9,7 @@ import Card from '../Card/page';
 
 const HeroWithCards = () => {
   return (
-    <div className="bg-gradient-to-r from-green-800 to-green-900 text-white py-20">
+    <div className="bg-gradient-to-r from-green-700 to-green-700 text-white py-20">
       <div className="container mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="text-5xl font-extrabold mb-4">Why Choose Us ?</h1>
         <p className="text-lg max-w-2xl mb-6">
