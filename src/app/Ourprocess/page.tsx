@@ -5,11 +5,11 @@ import { RiMentalHealthLine } from "react-icons/ri";
 import { GiEternalLove } from "react-icons/gi";
 import { TfiSupport } from "react-icons/tfi";
 
-import Card from '../Card/page';
+import Card from '../OurProcessCard/page';
 
 const Ourprocess = () => {
 return (
-     <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+     <div className="bg-gradient-to-r from-green-600 to-purple-500 text-white py-20">
        <div className="container mx-auto px-6 text-center flex flex-col items-center">
          <h1 className="text-5xl font-extrabold mb-4">The process</h1>
          <p className="text-lg max-w-2xl mb-6">

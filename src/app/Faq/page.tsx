@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer }: InputProps) => {
           }`}
       >
         <div className='overflow-hidden'>
-          <p className='text-base text-gray-600 pb-5 pr-12'>{answer}</p>
+          <p className='text-base text-gray-100 pb-5 pr-12'>{answer}</p>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ const Faq = () => {
       answer: "Absolutely! Your privacy is our top priority. We use advanced encryption and secure technology to protect your personal data and ensure confidentiality during every session. All therapists on our platform adhere to strict ethical guidelines regarding client privacy."
     },
     {
-      question: "Why should I choose Blissed Me for therapy?",
+      question: "Why should I choose Zen Path for therapy?",
       answer: "Our platform is built on a foundation of trust, transparency, and quality care. We offer personalized therapy sessions tailored to your needs, easy scheduling options, and affordable pricing. With glowing reviews from satisfied clients and a commitment to improving lives, we aim to be your reliable partner in mental wellness. These FAQs address common concerns users may have about mental health and online therapy while highlighting the security measures and professionalism of your platform as a trustworthy brand. You can adapt these further based on the specific features or values of your business!"
     },
     {
@@ -59,7 +59,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-purple-500'>
+    <div className='bg-gradient-to-r from-green-600 to-purple-500 pt-40'>
     <div className="max-w-3xl mx-auto py-12  sm:px-6 lg:px-8 ">
       <h2 className="text-3xl font-extrabold text-white mb-8">Frequently Asked Questions</h2>
       <div className="space-y-6">

@@ -30,28 +30,22 @@ interface CardWithFormProps {
 
 export default function CardWithForm({ title, desc,Icon }: CardWithFormProps) {  return (
 
-    // <Card className="w-[300px] h-[300px] items-center m-2 rounded-4xl border-amber-100 border-2 bg-pink-300">
-    //     {Icon && <Icon className="w-20 h-20"/>}
-    //   <CardHeader>
-    //           <CardTitle className="text-2xl">{title}</CardTitle>
-    //     <CardDescription className="text-black pt-7">
-    //       {desc}
-    //     </CardDescription>
-    //   </CardHeader>
+   
      
     // </Card>
      <div className="relative group">
-      <Card className="w-[300px] h-[300px] items-center m-2 rounded-4xl border-amber-100 border-2 bg-pink-300 
+      <Card className="w-[250px] h-[300px] items-center m-2 rounded-b-full rounded-t-full border-amber-100 border-2
+      bg-gradient-to-r from-orange-800 to-red-700 
                       transition-all duration-300 shadow-lg group-hover:shadow-[0_0_30px_rgba(255,105,180,0.6)] 
                       relative overflow-hidden">
         {/* Glow Effect */}
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-pink-300/20 to-transparent 
                         opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl pointer-events-none"></div>
 
-        {Icon && <Icon className="w-20 h-20 text-white group-hover:text-yellow-300 transition-all duration-300" />}
+        {Icon && <Icon className="w-20 h-20 text-white group-hover:text-pink-300 transition-all duration-300" />}
         <CardHeader>
-          <CardTitle className="text-2xl ">{title}</CardTitle>
-          <CardDescription className="text-black pt-7">{desc}</CardDescription>
+          <CardTitle className="text-2xl text-white">{title}</CardTitle>
+          <CardDescription className=" pt-7 text-white">{desc}</CardDescription>
         </CardHeader>
       </Card>
     </div>

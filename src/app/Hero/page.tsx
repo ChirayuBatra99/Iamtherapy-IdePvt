@@ -6,7 +6,7 @@ import HeroImage3 from "../../../public/heroImage3.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white pt-20 h-[95vh]">
+    <div className="bg-gradient-to-r from-green-600 to-purple-500 text-white pt-20 h-[95vh]">
       <div className="container mx-auto px-6 text-center flex flex-row items-center content-around">
 
         {/* Text Section */}

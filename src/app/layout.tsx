@@ -11,6 +11,7 @@ import Footer from "./Footer/page";
 import Struggles from "./Struggles/page";
 import Ourprocess from "./Ourprocess/page";
 import Faq from "./Faq/page";
+import DifferentUs from "./DifferentUs/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,16 +36,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar />
         <Hero />
         <Struggles />
         <HeroWithCards />
-        {/* <Ourprocess /> */}
+        <Ourprocess />
+        <DifferentUs />
         <Faq />
-        {children}
-        <PrivacySixCards />
+        {/* {children} */}
+        {/* <PrivacySixCards /> */}
         {/* <ServicesLongPage /> */}
         <Footer />
       </body>

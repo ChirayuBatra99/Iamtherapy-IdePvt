@@ -29,8 +29,8 @@ export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
   return (
     <div className="flex justify-center items-center  p-7">
       <Tilt
-        className="w-80 h-90  bg-emerald-600 border-2 border-white-950
-                  rounded-2xl shadow-xl flex items-center justify-center flex-col"
+        className="w-80 h-90  bg-gradient-to-r from-blue-400 to-purple-500
+         border-2 border-white-950 rounded-2xl shadow-xl flex items-center justify-center flex-col"
         tiltMaxAngleX={20}
         tiltMaxAngleY={20}
         glareEnable={true}

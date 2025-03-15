@@ -9,7 +9,7 @@ import TiltCard from '../TiltCards/page';
 
 const Struggles = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-500  text-white  pt-40">
+    <div className="bg-gradient-to-r from-green-600 to-purple-500  text-white  ">
 
 <div className="container mx-auto  text-center flex flex-col items-center">
   <h1 className="text-5xl font-extrabold mb-4">What are you struggling with?</h1>
