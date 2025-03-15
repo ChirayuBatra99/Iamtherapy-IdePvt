@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import HeroImage from "../../../public/heroImage.jpg";
-import HeroImage2 from "../../../public/heroImage2.jpg";
-import HeroImage3 from "../../../public/heroImage3.jpg";
+import HeroImage from "../../../../public/heroImage.jpg";
+import HeroImage2 from "../../../../public/heroImage2.jpg";
+import HeroImage3 from "../../../../public/heroImage3.jpg";
 
 const Hero = () => {
   return (

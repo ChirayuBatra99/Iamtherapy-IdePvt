@@ -14,7 +14,7 @@ const ServicesLongPage = () => {
           Some more shit, Some more shit, Some more shit, Some more shit, Some more shit, Some more shit, Some more shit, Some more shit.
         </p>
         <div className='flex flex-col'>
-            <div className='flex flex-row'>
+            {/* <div className='flex flex-row'>
                 <Card /> <Card />
             </div>
             <div className='flex flex-row'>
@@ -22,7 +22,7 @@ const ServicesLongPage = () => {
             </div>
             <div className='flex flex-row'>
                 <Card /> <Card />
-            </div>
+            </div> */}
         </div>
       </div>
     </div>

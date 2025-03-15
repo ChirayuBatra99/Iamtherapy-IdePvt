@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 
-import HeroWithCards from "./HomeComponents/HeroWithCards/page";
-import Hero from "./HomeComponents/Hero/page";
-import Navbar from "./Navbar/page";
-import PrivacySixCards from "./HomeComponents/PrivacySixCards/page";
-import ServicesLongPage from "./HomeComponents/ServicesLongPage/page";
-import Footer from "./Footer/page";
-import Struggles from "./HomeComponents/Struggles/page";
-import Ourprocess from "./HomeComponents/Ourprocess/page";
-import Faq from "./HomeComponents/Faq/page";
-import DifferentUs from "./HomeComponents/DifferentUs/page";
+import HeroWithCards from "./HeroWithCards/page";
+import Hero from "./Hero/page";
+import Navbar from "../Navbar/page";
+import PrivacySixCards from "./PrivacySixCards/page";
+import ServicesLongPage from "./ServicesLongPage/page";
+import Footer from "../Footer/page";
+import Struggles from "./Struggles/page";
+import Ourprocess from "./Ourprocess/page";
+import Faq from "./Faq/page";
+import DifferentUs from "./DifferentUs/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,17 +38,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        {/* <Navbar />
+        <Navbar />
         <Hero />
         <Struggles />
         <HeroWithCards />
         <Ourprocess />
         <DifferentUs />
-        <Faq /> */}
-        {children}
+        <Faq />
+        {/* {children} */}
         {/* <PrivacySixCards /> */}
         {/* <ServicesLongPage /> */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

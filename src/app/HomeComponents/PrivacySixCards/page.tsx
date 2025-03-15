@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Card from '../Card/page';
+import Card from '../HomeComponents/Card/page';
 
 const PrivacySixCards = () => {
   return (
