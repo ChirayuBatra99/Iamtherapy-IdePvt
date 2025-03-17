@@ -8,6 +8,11 @@ import Navbar from "../Navbar/page";
 // import PrivacySixCards from "./PrivacySixCards/page";
 // import ServicesLongPage from "./ServicesLongPage/page";
 import Footer from "../Footer/page";
+import Hero from "./Hero/page";
+import DifferentUs from "./DifferentUs/page";
+import Faq from "../HomeComponents/Faq/page";
+import ConsultCoach from "./ConsultCoach/page";
+import OurTeam from "./OurTeam/page";
 // import Struggles from "./Struggles/page";
 // import Ourprocess from "./Ourprocess/page";
 // import Faq from "./Faq/page";
@@ -39,6 +44,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar />
+        <Hero />
+        <DifferentUs />
+        <ConsultCoach />
+        <OurTeam />
+        <Faq />
             {/* {children} */}
         <Footer />
       </body>
