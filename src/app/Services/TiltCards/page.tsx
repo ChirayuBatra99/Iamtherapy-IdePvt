@@ -25,6 +25,7 @@ interface CardWithFormProps {
 
 export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
   const IconComponent = Icons[Icon]; // Get icon dynamically
+  const sentences = desc.split('.');
 
   return (
     <div className="flex justify-center items-center  p-7">
@@ -45,7 +46,14 @@ export default function TiltCard({ title, desc, Icon }: CardWithFormProps) {
           <p className="text-white">Invalid Icon</p> // Handle missing icons
         )}
         <h2 className="text-black text-2xl font-bold py-5">{title}</h2>
-        <p className="text-black text-1xl font-bold py-5 px-4">{desc}</p>
+        {/* <p className="text-black text-1xl font-bold py-5 px-4">{desc}</p> */}
+        <ul className="list-disc pl-5 text-black">
+      {sentences.map((s, index) => (
+        <li key={index} className="mb-2">
+          {s.trim()}.
+        </li>
+      ))}
+    </ul>
       </Tilt>
     </div>
   );

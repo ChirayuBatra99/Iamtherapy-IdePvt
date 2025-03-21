@@ -44,11 +44,11 @@ export default function RootLayout({
         <HeroWithCards />
         <Ourprocess />
         <DifferentUs />
-        <Faq />
-        {/* {children} */}
+        <Faq /> 
+        <Footer />
+       {/* {children}   */}
         {/* <PrivacySixCards /> */}
         {/* <ServicesLongPage /> */}
-        <Footer />
       </body>
     </html>
   );

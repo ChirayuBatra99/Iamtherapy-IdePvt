@@ -5,6 +5,7 @@ import Struggles from "./Struggles/page";
 import Navbar from "../Navbar/page";
 import Footer from "../Footer/page";
 import BeginTherapyStrip from "./BeginTherapyStrip/page";
+import Faq from "./Faq/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Struggles />
         <BeginTherapyStrip />
         {/* {children} */}
+        {/* <Faq /> */}
         <Footer />
       </body>
     </html>
