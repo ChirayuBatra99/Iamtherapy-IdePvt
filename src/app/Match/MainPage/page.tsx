@@ -4,6 +4,7 @@ import { useState } from "react";
 import Modal from "../Modal/page";
 import OptionsStrip from '../Components/OptionsStrip';
 import Strip2Options from '../Components/Strip2Options';
+import MeetTherapists from '../Components/MeetTherapists';
 
 const MainPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -11,13 +12,14 @@ const MainPage = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <OptionsStrip />
-      <Strip2Options />
-      {/* <button
+      <Strip2Options onClose={() => setModalOpen(true)} />
+      <MeetTherapists />
+      <button
         onClick={() => setModalOpen(true)}
         className="bg-blue-600 text-white px-4 py-2 rounded-lg"
       >
         Open Modal
-      </button> */}
+      </button>
 
 
 
